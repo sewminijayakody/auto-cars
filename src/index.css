@@ -1,0 +1,172 @@
+/* General Reset */
+body, h1, p, button {
+  margin: 0;
+  padding: 0;
+  font-family: poppins;
+
+}
+h1 {
+  margin: 0;
+  padding: 0;
+  font-family: poppins;
+ font-size: 30px;
+ margin-top: 20px;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  font-family: poppins;
+ font-size: 30px;
+ margin-top: 38px;
+}
+
+p2 {
+  margin: 0;
+  padding: 0;
+  font-family: poppins;
+ font-size: 30px;
+
+}
+.sign-in-button {
+  background: none; /* Remove background */
+  border: none; /* Remove border */
+  color: #f6f6f9; /* Blue text like a link */
+  text-decoration: underline; /* Add underline to mimic a link */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  padding: 0; /* Remove padding */
+  margin-left: 5px; /* Slight spacing between text and button */
+}
+
+.sign-in-button:hover {
+  color: #090a0a; /* Darker blue on hover */
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Header Styles */
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent; /* No transparency */
+  padding: 0px 20px;
+  z-index: 1000; /* Ensures it stays on top */
+}
+
+.top-right-buttons {
+  display: flex;
+  gap: 40px;
+  padding: 10px ;
+}
+
+.top-right-buttons button {
+  background: #CABA9C;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.top-right-buttons button:hover {
+  background: #151410;
+}
+
+.top-left-icon img {
+  height: 40px;
+  color: white;
+}
+
+/* Main Content Styles */
+main {
+  margin-top: 0px; /* Space for fixed header */
+  display: flex;
+  flex-direction: column;
+}
+
+.section {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.section-content {
+  position: absolute;
+  left: 20px;
+  z-index: 1;
+  color: white;
+}
+
+.left-paragraph {
+  color: rgb(252, 249, 249);
+}
+
+.left-paragraph h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.left-paragraph p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.container {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  height: 25vh; /* Full viewport height */
+}
+
+.take-ride-button {
+  padding: 15px 30px;
+  font-size: 18px;
+  background-color: #4C6444;
+  color: rgb(14, 14, 14);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-left: 100px; /* Adds space to the left of the button */
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.take-ride-button:hover {
+  background-color: #7ef357;
+}
+
+.background-images {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+  z-index: 0;
+}
+
+.background-images img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  opacity: 1; /* Ensure no transparency */
+}
