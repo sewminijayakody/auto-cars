@@ -1,22 +1,24 @@
 import React from "react";
+
 import { Link } from "react-router-dom";
+
 
 const LandingPage = () => {
   return (
     <div className="app">
-      <header>
-        <div className="top-left-icon">
-          <img src="/images/Picture4.png" alt="Icon" />
-        </div>
-        <div className="top-right-buttons">
-          <button>HOME</button>
-          {/* <button>ABOUT US</button> */}
-          <Link to={`aboutus`}>About Us</Link>
+    <header>
+      <div className="top-left-icon">
+        <img src="/images/Picture4.png" alt="Icon" />
+      </div>
+      <div className="top-right-buttons">
+        <button className="button-style">HOME</button>
+        
+        <Link to={`aboutus`} className="button-style">ABOUT US</Link>
 
-          <button>LOGIN</button>
-          <button>SIGN UP</button>
-          <button>ADMIN LOGIN</button>
-        </div>
+        <button className="button-style">LOGIN</button>
+        <button className="button-style">SIGN UP</button>
+        <button className="button-style">ADMIN LOGIN</button>   
+      </div>
       </header>
       <main>
         <section className="section">

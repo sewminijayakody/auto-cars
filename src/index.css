@@ -64,23 +64,32 @@ header {
   z-index: 1000; /* Ensures it stays on top */
 }
 
-.top-right-buttons {
-  display: flex;
-  gap: 40px;
-  padding: 10px ;
+.button-style {
+  background-color: #CABA9C; /* Green background */
+  border: none; /* Remove borders */
+  color: rgb(13, 13, 13); /* White text */
+  padding: 5px 8px; /* Padding for spacing */
+  text-align: center; /* Center text */
+  text-decoration: none; /* Remove underline from links */
+  display: inline-block; /* Allow elements to sit inline */
+  font-size: 16px; /* Font size */
+  margin: 4px 15px; /* Margin around buttons */
+  cursor: pointer; /* Pointer cursor on hover */
+  border-radius: 4px; /* Rounded corners */
+  transition: background-color 0.3s; /* Transition effect for hover */
 }
 
-.top-right-buttons button {
-  background: #CABA9C;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 15px;
-  cursor: pointer;
+/* Change background color on hover */
+.button-style:hover {
+  background-color: #CABA9C; /* Darker green on hover */
 }
 
-.top-right-buttons button:hover {
-  background: #151410;
+/* Optional: Responsive styling */
+@media (max-width: 100px) {
+  .button-style {
+    width: 10%; /* Full width on small screens */
+    font-size: 10px; /* Smaller font size on small screens */
+  }
 }
 
 .top-left-icon img {
